@@ -23,7 +23,9 @@ enum thread_state
 };
 
 // a thread control block -- this holds all metadata for scheduling
-// TODO: extend this struct and rr_* to avoid thread starvation
+// ******
+// *TODO: extend this struct and rr_* to avoid thread starvation
+// ******
 struct tblock_t
 {
   struct tcontext_t context;
@@ -66,7 +68,9 @@ get_next_tid (void)
 void
 rr_enqueue (struct tblock_t *tb)
 {
-  // TODO: extend this function, and/or rr_dequeue to avoid starvation
+  // ******
+  // *TODO: extend this function, and/or rr_dequeue to avoid starvation
+  // ******
 
   // find the matching queue
   struct rrqueue_t *queue = &queues[tb->base_priority];
@@ -79,7 +83,9 @@ rr_enqueue (struct tblock_t *tb)
 struct tblock_t*
 rr_dequeue (void)
 {
-  // TODO: extend this function, and/or rr_enqueue to avoid starvation
+  // ******
+  // *TODO: extend this function, and/or rr_enqueue to avoid starvation
+  // ******
 
   // find the nonempty queue with highest priority (0 is highest)
   unsigned int i;

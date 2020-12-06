@@ -1,0 +1,19 @@
+                     _   _                        _
+  ___  ___ _ __ ___ | |_| |__  _ __ ___  __ _  __| |
+ / _ \/ __| '_ ` _ \| __| '_ \| '__/ _ \/ _` |/ _` |
+| (_) \__ \ | | | | | |_| | | | | |  __/ (_| | (_| |
+ \___/|___/_| |_| |_|\__|_| |_|_|  \___|\__,_|\__,_|
+
+            Programmrahmen "User-Mode Threads"
+
+Aufgabenstellung:
+-----------------
+
+Der gegebene Programmrahmen enthält eine Implementierung für prioritäten-
+basiertes Scheduling von User-Mode Threads in schedule.{c,h} und
+dispatch.{c,h}, sowie ein Beispielprogramm welches die Implementung verwendet.
+
+Das Beispielprogramm verwendet die Threads in einer Weise, dass der zuletzt
+gestartete Thread verhungert (Starvation). Erweitern Sie die Datei schedule.c
+um einen aus der Vorlesung bekannten Mechanismus zur Starvation Avoidance,
+sodass der zuletzt gestartete Thread nicht mehr verhungert.

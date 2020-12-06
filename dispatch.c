@@ -79,5 +79,3 @@ dispatch_swap_context (struct tcontext_t *next, struct tcontext_t *prev)
   // (this allows us to swap back to the current context, and resume execution here)
   swapcontext(&prev->ucontext, &next->ucontext);
 }
-
-
